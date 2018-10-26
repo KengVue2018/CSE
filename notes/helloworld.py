@@ -41,12 +41,12 @@ print()
 print("%s is really old. They are %s years old." % (name, age))
 
 # Variable Assignments
-car_name = "Keng Moblie"
+car_name = "Wiebe Moblie"
 car_type = "GTR"
 car_cylinders = 10
 car_miles_per_gallon = 0.01
 
-# Make it print "I have a car called "Keng Mobile". It is a GTR
+# Make it print "I have a car called "Wiebe Mobile". It is a GTR
 print("I have a car called %s. It is a %s." % (car_name, car_type))
 
 # Recasting
