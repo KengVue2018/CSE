@@ -94,8 +94,50 @@ distance(0, 0, 5, 12)
 for i in range(10000):   # This gives the number 0 through 4
     say_it()
 
-for i in range(10):
+for i in range(1000000):
     print(1 + 1)
 
 for i in range(5):
     f(i)
+
+# While Loops
+a = 0
+while a < 10:
+    print(a)
+    a += 1 # This is the same as saying a = a + 1
+
+
+"""
+At the moment you START the loop:
+For loops - Use when you know EXACTLY how many literations 
+While loops - Use when you DON'T know how many literations
+"""
+
+# Control structures (If statement)
+sunny = False
+if sunny:
+    print("Go Outside")
+
+
+def grade_calc(percentage):
+    if percentage >= 90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+your_grade = grade_calc(82)
+print(your_grade)
+
+
+# "Random" Notes
+import random  # This should be on line 1
+print(random, randint(0, 100))
+
+
