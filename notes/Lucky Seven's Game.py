@@ -1,11 +1,23 @@
 import random
-money = int(input("You have $15"))
-rolldice1 = random.randint(1, 6)
-rolldice2 = random.randint(1, 6)
-role = (rolldice1 + rolldice2)
-while True:
-    if role == 7:
-        print("Nice your roll was a 7, you get to roll again: ", money + 4)
+amount_money = 15
+rounds = 0
+playing = True
+
+while amount_money > 0:
+    d1 = (random.randint(1, 6))
+    d2 = (random.randint(1, 6))
+
+88
+if d1 + d2 == 7:
+    amount_money += 5
+    print("You win!")
+    print(amount_money)
+
+if d1 + d2 != 7:
+    amount_money -= 1
+    print("You lose!")
+    print(amount_money)
+
 
 
 
