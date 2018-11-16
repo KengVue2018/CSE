@@ -17,6 +17,11 @@ while amount_money > 0:
         print("You lose!")
     print("You have $%d left." % amount_money)
 
+a = amount_money
+b = rounds
+
+
+
 
 
 
