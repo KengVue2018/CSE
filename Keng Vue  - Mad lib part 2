@@ -1,3 +1,4 @@
+list =
 name = input("Type in an name: ")
 places = input(" Type in an places: ")
 nouns = input("Type in an nouns: ")
@@ -14,6 +15,5 @@ print("Many people also go to %s or see the %s." % (places, pronouns))
 print("The people that live there love to eat %s and are very proud of their big %s." % (Food, nouns))
 print("They also like to %s in the sun and swim in the %s! It was a really %s trip!" % (verbs, places, abjective))
 
-
-Variables_list = ["name", "places", "nouns", "verbs", "abjective", "pronouns", "country", "animals", "food"]
-print(len(Variables_list))
+input_list = ["name", "places", "nouns", "verbs", "abjective", "pronouns", "country", "animals", "food"]
+print(input_list)
