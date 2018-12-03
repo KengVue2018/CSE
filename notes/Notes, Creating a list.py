@@ -94,7 +94,20 @@ for character in list1:
     list1.insert(current_index, "*")
 '''
 
+'''
 # Turn a list into a string
 print("".join(list1))
+'''
+
+# Function notes
+# a**2 + b**2 + c**2
+def pythagorean(a, b):
+    return (a**2 + b**2)**(1/2)
+
+
+print(pythagorean(3, 4))
+
+
+
 
 
