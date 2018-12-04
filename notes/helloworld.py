@@ -11,7 +11,7 @@ print("Look at what happens here. Is there any space?")
 print()
 print()
 print("There should be a couple blank lines here.")
-
+'''
 # Math
 print(3 + 5)
 print(5 - 2)
@@ -54,7 +54,7 @@ print("I have a car called %s. It is a %s." % (car_name, car_type))
 real_age = int(input("How old are you again?"))
 hidden_age = real_age + 5
 print("This is your real age: %d" % hidden_age)
-'''
+
 """
 This is a multi-line commwnt 
 Anything between the "s is not run.
