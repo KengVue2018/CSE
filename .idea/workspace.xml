@@ -11,7 +11,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CSE$Notes__Creating_a_list.coverage" NAME="Notes, Creating a list Coverage Results" MODIFIED="1543856532908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1543944734582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$CHALLENGEs.coverage" NAME="CHALLENGEs Coverage Results" MODIFIED="1543945446222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$CHALLENGEs.coverage" NAME="CHALLENGEs Coverage Results" MODIFIED="1544031547863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Keng_Vue____Mad_lib_part_2.coverage" NAME="Keng Vue  - Mad lib part 2 Coverage Results" MODIFIED="1544031708673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CSE$Lucky_Seven_s_Game.coverage" NAME="Lucky Seven's Game Coverage Results" MODIFIED="1543252869714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$fix_it.coverage" NAME="fix it Coverage Results" MODIFIED="1543856523140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Keng_Vue____Mad_lib.coverage" NAME="Keng Vue  - Mad lib Coverage Results" MODIFIED="1543601686202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -21,7 +22,7 @@
     <session id="888144264">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -37,19 +38,20 @@
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Keng Vue  - Mad lib part 2" value="448" />
-          <entry key="py" value="12500" />
+          <entry key="Keng Vue  - Mad lib part 2" value="1073" />
+          <entry key="py" value="12663" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="12948" />
+          <entry key="Python" value="13736" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -78,14 +80,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/CHALLENGEs.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding>
-                <marker date="1543945393050" expanded="true" signature="36:95" ph="..." />
-                <marker date="1543945393050" expanded="true" signature="37:41" ph="..." />
+                <marker date="1544031547753" expanded="true" signature="36:95" ph="..." />
+                <marker date="1544031547753" expanded="true" signature="37:41" ph="..." />
+                <marker date="1544031547753" expanded="true" signature="121:196" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/Notes, Creating a list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="46" />
+            <state relative-caret-position="731">
+              <caret line="43" selection-start-line="43" selection-end-line="46" />
               <folding>
                 <marker date="1543856523030" expanded="true" signature="2190:2195" ph="..." />
               </folding>
@@ -121,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Keng Vue  - Mad lib part 2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -142,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/helloworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <marker date="1543944388014" expanded="true" signature="1424:1429" ph="..." />
               </folding>
@@ -168,12 +171,12 @@
       <list>
         <option value="$PROJECT_DIR$/Keng Vue  - Mad lib.py" />
         <option value="$PROJECT_DIR$/notes/Lucky Seven's Game.py" />
-        <option value="$PROJECT_DIR$/Keng Vue  - Mad lib part 2" />
         <option value="$PROJECT_DIR$/notes/fix it.py" />
         <option value="$PROJECT_DIR$/notes/Notes, Creating a list.py" />
         <option value="$PROJECT_DIR$/notes/Keng Vue - Guess Game.py" />
         <option value="$PROJECT_DIR$/notes/helloworld.py" />
         <option value="$PROJECT_DIR$/notes/CHALLENGEs.py" />
+        <option value="$PROJECT_DIR$/Keng Vue  - Mad lib part 2" />
       </list>
     </option>
   </component>
@@ -194,6 +197,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,7 +214,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CHALLENGEs">
+  <component name="RunManager" selected="Python.Keng Vue  - Mad lib part 2">
     <configuration name="CHALLENGEs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,6 +255,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/CHALLENGEs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Keng Vue  - Mad lib part 2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CSE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Keng Vue  - Mad lib part 2" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -304,28 +329,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fix it" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CSE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/fix it.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="helloworld" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -350,18 +353,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Notes, Creating a list" />
-      <item itemvalue="Python.fix it" />
       <item itemvalue="Python.CHALLENGEs" />
       <item itemvalue="Python.Keng Vue - Guess Game" />
       <item itemvalue="Python.helloworld" />
+      <item itemvalue="Python.Keng Vue  - Mad lib part 2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Keng Vue  - Mad lib part 2" />
         <item itemvalue="Python.CHALLENGEs" />
         <item itemvalue="Python.helloworld" />
         <item itemvalue="Python.Keng Vue - Guess Game" />
         <item itemvalue="Python.Notes, Creating a list" />
-        <item itemvalue="Python.fix it" />
       </list>
     </recent_temporary>
   </component>
@@ -380,8 +383,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.204236" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,6 +445,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Notes, Creating a list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" selection-start-line="43" selection-end-line="46" />
+          <folding>
+            <marker date="1543856523030" expanded="true" signature="2190:2195" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Keng Vue - Guess Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Keng Vue  - Mad lib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -455,48 +476,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Keng Vue  - Mad lib part 2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/helloworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <marker date="1543944388014" expanded="true" signature="1424:1429" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Notes, Creating a list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="46" />
-          <folding>
-            <marker date="1543856523030" expanded="true" signature="2190:2195" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Keng Vue - Guess Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/CHALLENGEs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
-            <marker date="1543945393050" expanded="true" signature="36:95" ph="..." />
-            <marker date="1543945393050" expanded="true" signature="37:41" ph="..." />
+            <marker date="1544031547753" expanded="true" signature="36:95" ph="..." />
+            <marker date="1544031547753" expanded="true" signature="37:41" ph="..." />
+            <marker date="1544031547753" expanded="true" signature="121:196" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Keng Vue  - Mad lib part 2">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
