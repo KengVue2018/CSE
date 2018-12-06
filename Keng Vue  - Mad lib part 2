@@ -27,10 +27,10 @@ a.append(input("places_"))
 a.append(input("Food_"))
 
 
-print("Last summer, my mom and dad took me and %s on a trip to %s." % [1])
-print("The weather there is very %s!" % [3])
-print("Northern %s has many %s and they make %s, %s there." % [6, 7, 8])
-print("Many people also go to %s or see the %s." % [8, 5])
-print("The people that live there love to eat %s and are very proud of their big %s." % [9, 8])
-print("They also like to %s in the sun and swim in the %s! It was a really %s trip!" % [2, 8, 3])
+print("Last summer, my mom and dad took me and %s on a trip to %s.")
+print("The weather there is very %s!" )
+print("Northern %s has many %s and they make %s, %s there." )
+print("Many people also go to %s or see the %s.")
+print("The people that live there love to eat %s and are very proud of their big %s.")
+print("They also like to %s in the sun and swim in the %s! It was a really %s trip!")
 

@@ -16,6 +16,7 @@ while amount_money > 0:
         amount_money -= 1
         print("You lose!")
     print("You have $%d left." % amount_money)
+    print("You have played %s amount of rounds" % rounds)
 
 
 
