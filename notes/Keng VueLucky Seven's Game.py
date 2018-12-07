@@ -6,6 +6,7 @@ print("You have $15 left")
 
 while amount_money > 0:
     print()
+    rounds += 1
     d1 = random.randint(1, 6)
     d2 = random.randint(1, 6)
     print("You got an %s" % str(d1 + d2))
