@@ -1,11 +1,21 @@
 import random
-word_list = ["HI", "DO", "MY", "HAVE", "ANYTHING", "GOOD", "BAD", "FOOD", "BREAK", "HELL"]
+word_list = ["ANIME", "THAILAND", "SLAYER", "DIAMONDS", "ANYTHING", "GOOD", "SUPERMAN", "DRAGON", "BREAK", "SPIDERMAN"]
 
 guesses_left = 8
 
+output = []
 
 chosen_word = random.choice(word_list)
 print(chosen_word)
+
+
+
+
+
+
+
+
+
 
 
 
