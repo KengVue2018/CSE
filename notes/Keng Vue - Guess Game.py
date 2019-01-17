@@ -6,7 +6,7 @@ playing = True
 print("Type in a number 1-10")
 
 while guesses_left > 0 and playing:
-    guess = int(input("guesses="))
+    guess = input("guesses=")
 
 if guess > r:
         print("Lower")
