@@ -6,14 +6,14 @@ playing = True
 print("Type in a number 1-10")
 
 while guesses_left > 0 and playing:
-    guess = input("guesses=")
+    guesses_left = int(input("guesses="))
 
-if guess > r:
+if guesses_left > r:
         print("Lower")
-        guess -= 1
-elif guess < r:
+        guesses_left -= 1
+elif guesses_left < r:
         print("Greater")
-        guess -= 1
+        guesses_left -= 1
 else:
         print("Corrent!")
         playing = False
