@@ -16,19 +16,15 @@ print(word_selection)
 playing = True
 
 while turns > 0 and playing:
-    hidden_word = []
-    for letter in word_selection:
-        if letter in letters_guessed:
-            hidden_word.append(letter)
-
+    user_guess = input("Guess a letter:")
+    print('\n * 10')
+    if user_guess.lower() in word_selection or user_guess.upper() in word_selection:
+        print("You got it right")
+        for i in range(len(word_selection)):
+            word_selection.append(letters_guessed)
         else:
-            hidden_word.append("")
-            print("".join(hidden_word))
+            if word_selection[i].lower() == user_guess.lower():
+                letters_guessed.pop(i)
+                turns = -1
+                
 
-            user_guess = input("Guess a letter:")
-            print('\n * 10')
-            if user_guess.lower() in word_selection or user_guess.upper() in word_selection:
-                print("You got it right")
-                for i in range(len(word_selection)):
-                    if word_selection[i].lower() == user_guess.lower():
-                        letters_guessed.pop(i)
