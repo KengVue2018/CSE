@@ -26,5 +26,5 @@ while turns > 0 and playing:
             if word_selection[i].lower() == user_guess.lower():
                 letters_guessed.pop(i)
                 turns = -1
-                
+
 
