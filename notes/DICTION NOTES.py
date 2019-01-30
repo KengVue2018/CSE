@@ -83,3 +83,28 @@ complex_dictional = {
 }
 
 print(complex_dictional["AK"]["CITIES"][0])
+
+
+print(complex_dictional["FL"]["NAME"])
+print(complex_dictional["GA"]["CITIES"][0])
+
+
+print(complex_dictional.keys())
+
+
+print(complex_dictional.items())
+print(nested_dictional.items())
+
+for key, value in complex_dictional.items():
+    print(key)
+    print(value)
+    print("-" * 20)
+
+# This is where it looks pretty
+print()
+for state, info in complex_dictional.items():
+    for label, stats in info.items():
+        print(label)
+        print(stats)
+        print("-" * 20)
+    print("=" * 20)
