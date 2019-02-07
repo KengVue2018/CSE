@@ -21,14 +21,14 @@ world_map = {
     },
     'GARBAGE': {
         'NAME': "GARBAGE",
-        'DESCRIPTION': "Its full of stuff but some stuff isn't that useful",
+        'DESCRIPTION': "Its full of stuff but some stuff isn't that useful in here.",
         'PATHS': {
             'SOUTH': "HORSE PIN"
         }
     },
     'STREET': {
         'NAME': "Street",
-        'DESCRIPTION': "Its kinda dark but theres barley any car that goes on it",
+        'DESCRIPTION': "Its kinda dark but there's barley any car that pass goes on this street.",
         'PATHS': {
             'NORTH': "STORE",
             'EAST': "HOUSE",
@@ -36,15 +36,17 @@ world_map = {
     },
     'ORANGE TREES': {
         'NAME': "ORANGE TREES",
-        'DESCRIPTION': "Its full of orange trees. Some of them are really good.",
+        'DESCRIPTION': "Its full of orange trees. Some of them are really good. Looks like there's a building"
+                       "if you go East.",
         'PATHS': {
             'EAST': "FARM",
             'NORTH': "HOUSE",
         }
     },
     'FARM': {
-        'NAME': "The Farm",
-        'DESCRIPTION': "Looks like everything in there are for fariming except this one idem",
+        'NAME': "THE FARM",
+        'DESCRIPTION': "Looks like everything item in here are for farming except this one item. There's a big field up"
+                       "North, a slaughter house on the south, and a storage house on the east.",
         'PATH': {
             'NORTH': "FIELD",
             'WEST': "ORANGE TREES",
@@ -54,22 +56,22 @@ world_map = {
     },
     'FIELD': {
         'NAME': "FIELD",
-        'DESCRIPTION': "Its full of corns and u can't see that well",
+        'DESCRIPTION': "Its full of corn and u can't see that well. But you hear water up North.",
         'PATHS': {
             'NORTH': "POND"
         }
     },
     'POND': {
         'NAME': "POND",
-        'DESCRIPTION': "Its kinda dirty but animals still can live there",
+        'DESCRIPTION': "I wonder if there's any fish or ducks that live hear.",
         'PATHS': {
             'SOUTH': "FIELD"
         }
     },
-    'Storage House': {
-        'NAME': "Storage House",
+    'STORAGE HOUSE': {
+        'NAME': "STORAGE HOUSE",
         'DESCRIPTION': "Its full of stuff. There's barely any room to move. "
-                       "But there are a lot of useful items in here.",
+                       "But there are a lot of useful items in here. But you hear a cow outside.",
         'PATHS': {
             'NORTH': "COW PIN",
             'WEST': "FARM",
@@ -77,7 +79,7 @@ world_map = {
     },
     'COW PIN': {
         'NAME': "COW PIN",
-        'DESCRIPTION': "This area smell awful.",
+        'DESCRIPTION': "This area smell awful. But there's barely any cows that's here. Looks like the pigs have more",
         'PATHS': {
             'EAST': "PIG PIN",
             'SOUTH': "STORAGE HOUSE",
@@ -86,16 +88,17 @@ world_map = {
     },
     'PIG PIN': {
         'NAME': "Pig Pin",
-        'DESCRIPTION': "Wow this area even worst then the cow pin but its very quiet.",
+        'DESCRIPTION': "Wow this area smell even worst then the cow's pin but its very quiet for how many pigs that are"
+                       "here.",
         'PATHS': {
             'WEST': "COW PIN",
-            'SOUTH': "Water storage",
-            'NORTH': "Chicken PIN",
+            'SOUTH': "WATER STORAGE",
+            'NORTH': "CHICKEN PIN",
         }
     },
     'WATER STORAGE': {
         'NAME': "THE WATER STORAGE",
-        'DESCRIPTION': "There's two big tubes that holds water",
+        'DESCRIPTION': "There's two big tubes that holds water here. But there looks like a car that is also here.",
         'PATHS': {
             'NORTH': "PIG PIN",
         }
