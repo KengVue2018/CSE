@@ -16,9 +16,9 @@ for i in range(len(random)):
     if range[i] in alphabet:
         random_word.pop[i]
         random_word.insert(1, "_")
-        if random [i] in pun:
+        if random[i] in pun:
             random.insert(i, "!")
-            print(''.join(random_word))
+            print(' '.join(random_word))
 
 while guess > 0 and not win:
     guess1 = input("Guess a letter =")

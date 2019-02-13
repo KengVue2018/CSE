@@ -1,6 +1,10 @@
+import SPECIAL_Random
+
+
+
 class Phone(object):
-    def __init__(self, carrier, charge_left):
-        # There are sttributes that a phone has.
+    def __init__(self, carrier, charge_left=50):
+        # There are attributes that a phone has.
         # These should be relevant to our process.
         self.screen = True
         self.camera = 2
@@ -29,5 +33,30 @@ class Phone(object):
             print("Your phone is now at %s" % self.battery_left)
 
 
-sy_phone = Phone("AT&T", 100)
+def smash_phone(self):
+    print("SMASH!!!!!!!!")
+    print("It broke.")
+    self.screen = False
+
+
+# Initialize Object
+my_phone = Phone("AT&T", 100)
 your_phone = Phone("Bell", 0)
+default_phone = Phone("Verizon")
+
+
+my_phone.make_call(60)
+my_phone.make_call(10)
+my_phone.charge(100)
+my_phone.make_call(10)
+your_phone.smash_phone()
+your_phone.make_call(1)
+
+
+print(SPECIAL_Random.RandomWiebe.my_random())
+
+
+
+
+
+
