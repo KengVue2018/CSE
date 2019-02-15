@@ -6,5 +6,16 @@ class TV(object):
         self.controller = remote
         self.resolution = resolution
 
-    def remote(self):
+    def screen(self):
+        if not self.screen:
+            print("The TV is off. You have to turn it on.")
+
+    def button(self):
+        if self.button:
+            
+
+
+
+
+
 
