@@ -54,7 +54,16 @@ Farm.south = Slaughter_House
 Farm.east = Storage_House
 
 Field = Room("The field is full of corn. But you can barely see anything once your inside it.")
+Pond = Room("Pond", south=None)
 
+Field.south = Pond
+
+Storage_House = Room("There's a lot of stuff in here. But there is also barely any room in here.")
+Cow_Pin = Room("Cow_Pin", north=None)
+Farm = Room("Farm", west=None)
+
+Storage_House.north = Cow_Pin
+Storage_House.west = Farm
 
 
 
