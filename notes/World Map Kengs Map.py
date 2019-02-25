@@ -65,5 +65,43 @@ Farm = Room("Farm", west=None)
 Storage_House.north = Cow_Pin
 Storage_House.west = Farm
 
+Cow_Pin = Room("It smells awful but there are barley any cows here. But the pig pin have more pigs.")
+Pig_Pin = Room("Pig_Pin", east=None)
+Storage_House = Room("Storage_House", south=None)
+
+Cow_Pin.east = Pig_Pin
+Cow_Pin.south = Storage_House
+
+Pig_Pin = Room("Wow this place smells even worst then the cow pin but its very quiet for how much pigs that are here.")
+Cow_Pin = Room("Cow_Pin", west=None)
+Water_Storage = Room("Water_Storage", south=None)
+Chicken_Pin = Room("Chicken_Pin", north=None)
+
+Pig_Pin.west = Cow_Pin
+Pig_Pin.south = Water_Storage
+Pig_Pin.north = Chicken_Pin
+
+Water_Storage = Room("There are two big tubes here that holds water here. There is also a car here too.")
+Pig_Pin = Room("Pig_Pin", north=None)
+
+Water_Storage.north = Pig_Pin
+
+Chicken_Pin = Room("It doesn't smell that bad as the other 2 but it sure is louder then the others.")
+Apple_Trees = Room("Apple_Trees", west=None)
+Pig_Pin = Room("Pig_Pin", south=None)
+
+Chicken_Pin.north = Apple_Trees
+Chicken_Pin.south = Pig_Pin
+
+Apple_Trees = Room("There are a lot of apple trees here. This could be a good spot to play hide and seek.")
+Chicken_Pin = Room("Chicken_Pin", east=None)
+
+Apple_Trees.east = Chicken_Pin
+
+Store = Room("There's a lot of good stuff to eat here.")
+Street = Room("Street", south=None)
+
+Store.south = Street
+
 
 
