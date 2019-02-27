@@ -10,9 +10,10 @@ class TV(object):
         if not self.screen:
             print("The TV is off. You have to turn it on.")
 
-    def button(self, onButton):
-        if self.button:
-            onButton
+    def remote(self):
+        if not self.controller:
+            print("The remote is dead")
+
 
 
 

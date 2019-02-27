@@ -4,7 +4,8 @@ class Room(object):
         self.north = north
         self.south = south
         self.east = east
-        self.description
+        self.description = description
+        self.character = []
 
 
 class Player(object):
@@ -12,31 +13,31 @@ class Player(object):
         self.current_location = starting_location
         self.inventory = []
 
+    def move(self, new_location):
+        """This moves the player to a new room
 
-def move(self, new_location):
-    """This moves the player to a new room
+        :param self:
+        :param new_location: The room object of which you are going to
+        """
+        self.current_location = new_location
 
+    def find_next_room(self, direction):
+        """This method searches the current room so see if a room exists in that direction.
 
-    :param new_location: The room object of which you are going to
-    """
-    self.current_location = new_location
-
-
-def find_next_room(self, direction):
-    """This method searches the current room so see if a room exists in that direction.
-
-
-    :param direction:The direction you want to move to.
-    :return:The Room object if it exists, or None if it does not.
-    """
-    return getattr(self.current_location, direction)
+        :param self:
+        :param direction:The direction you want to move to.
+        :return The Room object if it exists, or None if it does not.
+        """
+        return getattr(self.current_location, direction)
 
 # This is option 2
 # name_of_room = getattr(self.current_location, direction)
 # return globals()[name_of_room]
 
 # Option 1 - Define is we go
-R19A = Room("Mr.Wiebe's Room")
+
+
+R19A = Room("Mr.W's Room", "INSERT DESCRIPTION HERE")
 parking_lot = Room("parking_lot", None, R19A)
 
 
@@ -44,7 +45,7 @@ R19A.north = parking_lot
 
 
 # Option 2 - Set all aat once, modify controller
-R19A = Room("Mr.Wiebe's Room", 'parking_lot')
+R19A = Room("Mr.W's Room", 'parking_lot')
 parking_lot = Room("parking_lot", None, "R19A")
 
 player = Player(R19A)
@@ -62,14 +63,12 @@ while playing:
     elif command.lower() in directions:
         try:
             next_room = player.find_next_room(command)
+            if next_room is None:
+                raise AttributeError
             player.move(next_room)
+        except AttributeError:
+            print("That path does not exist")
         except KeyError:
             print("I can't go that way")
     else:
         print("Command Not Found")
-
-
-
-
-
-
