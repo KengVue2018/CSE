@@ -60,7 +60,7 @@ class Armor(Item):
     def __init__(self, name):
         super(Armor, self).__init__(name)
         self.name = name
-        
+
 
 class Helmet(Armor):
     def __init__(self, helmet):
@@ -109,8 +109,8 @@ class HealthPotions(Consumables):
 
 
 class WaterBottle(Consumables):
-    def __init__(self, Water_Bottle):
-        super(WaterBottle, self).__init__(Water_Bottle)
+    def __init__(self, water_bottle):
+        super(WaterBottle, self).__init__(water_bottle)
         self.heal = 5
 
 
@@ -124,14 +124,3 @@ class Corn(Consumables):
     def __init__(self, corn):
         super(Corn, self).__init__(corn)
         self.heal = 10
-
-
-
-
-
-
-
-
-
-
-

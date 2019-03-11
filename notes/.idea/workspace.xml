@@ -11,6 +11,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1551287917337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Inheritance.coverage" NAME="Inheritance Coverage Results" MODIFIED="1551375208141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$KENGS_HANGMAN_V_2.coverage" NAME="KENGS HANGMAN V.2 Coverage Results" MODIFIED="1552321311525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1550250483990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$PYTHON_3_6.coverage" NAME="PYTHON 3.6 Coverage Results" MODIFIED="1550079634728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/notes$KENG_VUE__OBJECT.coverage" NAME="KENG VUE, OBJECT Coverage Results" MODIFIED="1550250491437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -63,10 +64,11 @@
     <session id="459727595">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.37" value="4" />
           <entry key="project.open.time.39" value="1" />
@@ -75,7 +77,7 @@
           <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,12 +92,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10027" />
+          <entry key="py" value="10047" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10027" />
+          <entry key="Python" value="10047" />
         </counts>
       </usages-collector>
     </session>
@@ -114,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Object Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="986">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
@@ -132,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KENGS HANGMAN V.2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -153,7 +155,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Inheritance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="325">
               <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
               <folding>
                 <marker date="1551375853885" expanded="true" signature="22:27" ph="..." />
@@ -168,19 +170,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <marker date="1552066832265" expanded="true" signature="19:77" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="96:101" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="605:1087" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="930:1087" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="1139:1148" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="1297:1302" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="1425:1564" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="2084:2190" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="2215:2220" ph="..." />
-                <marker date="1552066832265" expanded="true" signature="2785:2891" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="19:77" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="96:101" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="605:1087" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="930:1087" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="1139:1148" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="1297:1302" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="1417:1556" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="2076:2182" ph="..." />
+                <marker date="1552321068506" expanded="true" signature="2207:2212" ph="..." />
               </folding>
             </state>
           </provider>
@@ -189,8 +190,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KENG'S TRUE WORLD MAP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
-              <caret line="147" selection-start-line="129" selection-end-line="147" />
+            <state relative-caret-position="1282">
+              <caret line="126" column="6" lean-forward="true" selection-start-line="126" selection-start-column="6" selection-end-line="126" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -230,6 +231,7 @@
         <option value="$PROJECT_DIR$/KENG VUE, OBJECT.py" />
         <option value="$PROJECT_DIR$/Inheritance.py" />
         <option value="$PROJECT_DIR$/Items.py" />
+        <option value="$PROJECT_DIR$/KENGS HANGMAN V.2.py" />
       </list>
     </option>
   </component>
@@ -269,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Inheritance">
+  <component name="RunManager" selected="Python.KENGS HANGMAN V.2">
     <configuration name="Inheritance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,6 +308,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KENG VUE, OBJECT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="KENGS HANGMAN V.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KENGS HANGMAN V.2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -386,9 +410,11 @@
       <item itemvalue="Python.KENG VUE, OBJECT" />
       <item itemvalue="Python.World Map OOP" />
       <item itemvalue="Python.Inheritance" />
+      <item itemvalue="Python.KENGS HANGMAN V.2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.KENGS HANGMAN V.2" />
         <item itemvalue="Python.Inheritance" />
         <item itemvalue="Python.World Map OOP" />
         <item itemvalue="Python.KENG VUE, OBJECT" />
@@ -473,23 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SPECIAL_Random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1550079360512" expanded="true" signature="52:57" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KENG'S TRUE WORLD MAP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="147" selection-start-line="129" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -499,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Object Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="986">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
@@ -511,26 +520,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SPECIAL_Random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1550079360512" expanded="true" signature="52:57" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KENGS HANGMAN V.2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Inheritance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="325">
           <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding>
             <marker date="1551375853885" expanded="true" signature="22:27" ph="..." />
@@ -541,21 +553,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/KENG'S TRUE WORLD MAP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1282">
+          <caret line="126" column="6" lean-forward="true" selection-start-line="126" selection-start-column="6" selection-end-line="126" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <marker date="1552066832265" expanded="true" signature="19:77" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="96:101" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="605:1087" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="930:1087" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="1139:1148" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="1297:1302" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="1425:1564" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="2084:2190" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="2215:2220" ph="..." />
-            <marker date="1552066832265" expanded="true" signature="2785:2891" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="19:77" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="96:101" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="605:1087" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="930:1087" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="1139:1148" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="1297:1302" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="1417:1556" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="2076:2182" ph="..." />
+            <marker date="1552321068506" expanded="true" signature="2207:2212" ph="..." />
           </folding>
         </state>
       </provider>

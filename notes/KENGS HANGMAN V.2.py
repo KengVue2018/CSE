@@ -3,7 +3,7 @@ import string
 
 guess = 8
 pun = list(string.punctuation)
-alphabet = string.ascil_letters
+alphabet = string.ascii_letters
 word_list = ["GAREN", "THAILAND", "SLAYER", "DIAMONDS", "MASTER YI", "ZED", "SUPERMAN", "DRAGON", "BREAK", "YASUO"]
 
 
@@ -14,7 +14,6 @@ letters_guessed = []
 win = False
 for i in range(len(random)):
     if range[i] in alphabet:
-        random_word.pop[i]
         random_word.insert(1, "_")
         if random[i] in pun:
             random.insert(i, "!")
@@ -34,4 +33,3 @@ while guess > 0 and not win:
                 if "_" not in random_word:
                     win = True
                     print("You Win! Congrauation!")
-
