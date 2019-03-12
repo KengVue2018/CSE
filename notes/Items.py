@@ -48,6 +48,14 @@ class Sword(Weapon):
         self.sword = sword
 
 
+class Rifle(Weapon):
+    def __init__(self, rifle):
+        super(Rifle, self).__init__(rifle)
+        self.damage = 40
+        self.duration = 100
+        self.rifle = rifle
+
+
 class Shield(Item):
     def __init__(self, shields):
         super(Shield, self).__init__(shields)
