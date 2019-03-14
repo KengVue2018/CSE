@@ -10,51 +10,57 @@ class Weapon(Item):
 
 
 class Rake(Weapon):
-    def __init__(self, rake):
-        super(Rake, self).__init__(rake)
+    def __init__(self, name):
+        super(Rake, self).__init__(name)
         self.duration = 100
-        self.damage = 15
         self.Rake = Rake
+        self.name = name
+
+    Rake = Weapon("Rake", 10)
 
 
 class BaseballBat(Weapon):
     def __init__(self, baseball_bat):
         super(BaseballBat, self).__init__(baseball_bat)
-        self.damage = 10
         self.duration = 100
         self.baseball_bat = baseball_bat
 
+    BaseballBat = Weapon("Baseball_Bat", 10)
 
 class Hands(Weapon):
     def __init__(self, hands):
         super(Hands, self).__init__(hands)
-        self.damage = 5
         self.hands = hands
+
+    Hands = Weapon("Hands", 5)
 
 
 class Knife(Weapon):
     def __init__(self, knife):
         super(Knife, self).__init__(knife)
-        self.damage = 20
         self.duration = 100
         self.knife = knife
+
+    Knife = Weapon("Knife", 15)
 
 
 class Sword(Weapon):
     def __init__(self, sword):
         super(Sword, self).__init__(sword)
-        self.damage = 30
         self.duration = 100
         self.sword = sword
 
+    Sword = Weapon("Sword", 40)
+
 
 class Rifle(Weapon):
-    def __init__(self, rifle):
-        super(Rifle, self).__init__(rifle)
-        self.damage = 40
+    def __init__(self, rifle, name):
+        super(Rifle, self).__init__(name)
         self.duration = 100
         self.rifle = rifle
+        self.name = name
 
+    Rifle = Weapon("Rifle", 40)
 
 class Shield(Item):
     def __init__(self, shields):
@@ -65,9 +71,9 @@ class Shield(Item):
 
 
 class Armor(Item):
-    def __init__(self, name):
+    def __init__(self, name, armor_amt, Armor):
         super(Armor, self).__init__(name)
-        self.name = name
+        self.armor_amt = armor_amt
 
 
 class Helmet(Armor):
@@ -134,23 +140,6 @@ class Corn(Consumables):
         self.heal = 10
 
 
-class Item(object):
-    def __init__(self, name):
-        self.name = name
-
-
-class Weapon(Item):
-    def __init__(self, Weapon, name, damage):
-        super(Weapon, self).__init__(name)
-        self.damage = damage
-
-
-class Armor(Item):
-    def __init__(self, name, armor_amt, Armor):
-        super(Armor, self).__init__(name)
-        self.armor_amt = armor_amt
-
-
 class Character(object):
     def __init__(self, name, health, weapon, armor):
         self.name = name
@@ -158,14 +147,12 @@ class Character(object):
         self.weapon = weapon
         self.armor = armor
 
-
     def take_damage(self, damage: int):
         if self.armor.armor_amt > damage:
             print("No damage was taken because of some AMAZING armor.")
         else:
             self.health -= damage - self.armor.armor_amt
             print("%s has %d health left" % (self.name, self.health))
-
 
     def attack(self, target):
         print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
