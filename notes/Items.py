@@ -16,8 +16,6 @@ class Rake(Weapon):
         self.Rake = Rake
         self.name = name
 
-    Rake = Weapon("Rake", 10)
-
 
 class BaseballBat(Weapon):
     def __init__(self, baseball_bat):
@@ -25,14 +23,11 @@ class BaseballBat(Weapon):
         self.duration = 100
         self.baseball_bat = baseball_bat
 
-    BaseballBat = Weapon("Baseball_Bat", 10)
 
 class Hands(Weapon):
     def __init__(self, hands):
         super(Hands, self).__init__(hands)
         self.hands = hands
-
-    Hands = Weapon("Hands", 5)
 
 
 class Knife(Weapon):
@@ -41,16 +36,12 @@ class Knife(Weapon):
         self.duration = 100
         self.knife = knife
 
-    Knife = Weapon("Knife", 15)
-
 
 class Sword(Weapon):
     def __init__(self, sword):
         super(Sword, self).__init__(sword)
         self.duration = 100
         self.sword = sword
-
-    Sword = Weapon("Sword", 40)
 
 
 class Rifle(Weapon):
@@ -59,8 +50,6 @@ class Rifle(Weapon):
         self.duration = 100
         self.rifle = rifle
         self.name = name
-
-    Rifle = Weapon("Rifle", 40)
 
 class Shield(Item):
     def __init__(self, shields):
@@ -71,14 +60,14 @@ class Shield(Item):
 
 
 class Armor(Item):
-    def __init__(self, name, armor_amt, Armor):
+    def __init__(self, name, Armor):
         super(Armor, self).__init__(name)
-        self.armor_amt = armor_amt
+        self.armor_amt = Armor
 
 
 class Helmet(Armor):
-    def __init__(self, helmet):
-        super(Helmet, self).__init__(helmet)
+    def __init__(self, Helmet):
+        super(Armor, self).__init__(Helmet)
         self.duration = 10
         self.blocks_damage = 10
 
@@ -160,14 +149,14 @@ class Character(object):
 
 
 # Items
-sword = Weapon("Sword", 10)
-canoe = Weapon("Canoe", 42)
-wiebe_armor = Armor("Armor of the Gods", 10000000000000000000000)
+sword = Weapon("Sword")
+canoe = Weapon("Canoe")
+Kengs_Armor = Armor("Armor of the Legend")
 
 
 # Character
-orc = Character("Orci", 100, sword, Armor("Genertic Armor", 2))
-orc2 = Character("Wiebe", 1000, canoe, wiebe_armor)
+orc = Character("Orc", 100, sword, Armor("Genertic Armor", 2))
+orc2 = Character("Wiebe", 1000, canoe, Armor)
 
 
 orc.attack(orc2)
