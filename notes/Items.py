@@ -15,6 +15,7 @@ class Rake(Weapon):
         self.duration = 100
         self.Rake = Rake
         self.name = name
+        self.damage = 10
 
 
 class BaseballBat(Weapon):
@@ -22,26 +23,30 @@ class BaseballBat(Weapon):
         super(BaseballBat, self).__init__(baseball_bat)
         self.duration = 100
         self.baseball_bat = baseball_bat
+        self.damage = 10
 
 
 class Hands(Weapon):
     def __init__(self, hands):
         super(Hands, self).__init__(hands)
         self.hands = hands
+        self.damage = 5
 
 
 class Knife(Weapon):
-    def __init__(self, knife):
-        super(Knife, self).__init__(knife)
+    def __init__(self, knife, name):
+        super(Knife, self).__init__(name)
         self.duration = 100
         self.knife = knife
+        self.damage = 20
 
 
 class Sword(Weapon):
-    def __init__(self, sword):
-        super(Sword, self).__init__(sword)
+    def __init__(self, name):
+        super(Sword, self).__init__(name)
         self.duration = 100
-        self.sword = sword
+        self.damage = 35
+        self.name = name
 
 
 class Rifle(Weapon):
@@ -50,24 +55,26 @@ class Rifle(Weapon):
         self.duration = 100
         self.rifle = rifle
         self.name = name
+        self.damage = 40
+
 
 class Shield(Item):
-    def __init__(self, shields):
-        super(Shield, self).__init__(shields)
+    def __init__(self, shield):
+        super(Shield, self).__init__(shield)
         self.duration = 100
-        self.shields = shields
+        self.shields = shield
         self.blocks_damage = 10
 
 
 class Armor(Item):
-    def __init__(self, name, Armor):
+    def __init__(self, name, armor):
         super(Armor, self).__init__(name)
-        self.armor_amt = Armor
+        self.armor = armor
 
 
 class Helmet(Armor):
-    def __init__(self, Helmet):
-        super(Armor, self).__init__(Helmet)
+    def __init__(self, helmet):
+        super(Armor, self).__init__(helmet)
         self.duration = 10
         self.blocks_damage = 10
 
@@ -151,7 +158,6 @@ class Character(object):
 # Items
 sword = Weapon("Sword")
 canoe = Weapon("Canoe")
-Kengs_Armor = Armor("Armor of the Legend")
 
 
 # Character
