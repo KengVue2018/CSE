@@ -136,6 +136,12 @@ class Corn(Consumables):
         self.heal = 10
 
 
+class Backpack(Item):
+    def __init__(self, name):
+        super(Backpack, self).__init__(name)
+        self.backpack_space = 10
+
+
 class Character(object):
     def __init__(self, name, health, weapon, armor):
         self.name = name
