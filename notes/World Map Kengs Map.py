@@ -36,7 +36,7 @@ House = Room("House", east=None)
 Street.north = Store
 Street.east = House
 
-Orange_Trees = Room("Its full of orange trees. Some of them are really good. But looks like theres a"
+Orange_Trees = Room("Its full of orange trees. Some of them are really good. But looks like there's a"
                     "building to the east.")
 
 Farm = Room("Farm", east=None)

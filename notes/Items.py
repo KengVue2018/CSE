@@ -13,9 +13,13 @@ class Rake(Weapon):
     def __init__(self, name):
         super(Rake, self).__init__(name)
         self.duration = 100
-        self.Rake = Rake
         self.name = name
         self.damage = 10
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
 
 
 class BaseballBat(Weapon):
@@ -24,6 +28,11 @@ class BaseballBat(Weapon):
         self.duration = 100
         self.baseball_bat = baseball_bat
         self.damage = 10
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
 
 
 class Hands(Weapon):
@@ -31,6 +40,11 @@ class Hands(Weapon):
         super(Hands, self).__init__(hands)
         self.hands = hands
         self.damage = 5
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
 
 
 class Knife(Weapon):
@@ -39,6 +53,11 @@ class Knife(Weapon):
         self.duration = 100
         self.knife = knife
         self.damage = 20
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
 
 
 class Sword(Weapon):
@@ -47,6 +66,11 @@ class Sword(Weapon):
         self.duration = 100
         self.damage = 35
         self.name = name
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
 
 
 class Rifle(Weapon):
@@ -56,6 +80,9 @@ class Rifle(Weapon):
         self.rifle = rifle
         self.name = name
         self.damage = 40
+        self.use = False
+
+    def duration(self):
 
 
 class Shield(Item):
