@@ -83,6 +83,8 @@ class Rifle(Weapon):
         self.use = False
 
     def duration(self):
+        self.use = True
+        self.duration -= 1
 
 
 class Shield(Item):
