@@ -93,6 +93,11 @@ class Shield(Item):
         self.duration = 100
         self.shields = shield
         self.blocks_damage = 10
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
 
 
 class Armor(Item):

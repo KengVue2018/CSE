@@ -1,43 +1,24 @@
 class Room(object):
-    def __init__(self, name, north=None, west=None, south=None, east=None):
+    def __init__(self, name, description, north=None, west=None, south=None, east=None):
         self.name = name
+        self.description = description
         self.north = north
         self.west = west
         self.south = south
         self.east = east
 
 
-House = Room("It's your house. And you are in it.")
-Horse_Pin = Room("Horse_Pin", north=None)
-Street = Room("Street", west=None)
-Orange_Trees = Room("Oranges_Trees", south=None)
+House = Room("House", "It's your house. And you are in it.", 'Horse_Pin', 'Street', 'Orange_Trees')
 
-House.north = Horse_Pin
-House.west = Street
-House.south = Orange_Trees
+Horse_Pin = Room("Horse_Pin", "Its the Horse Pin. It stinks but it doesn't smell that bad here. "
+                 "Looks like there's a path that keep going up north.", 'Garbage', '', 'House')
 
-Horse_Pin = Room("Its the Horse Pin. It stinks but it doesn't smell that bad here. "
-                 "Looks like there's a path that keep going up north.")
-Garbage = Room("Garbage", north=None)
-House = Room("House", south=None)
+Garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", '', '', 'Horse_Pin')
 
-Horse_Pin.north = Garbage
-Horse_Pin.south = House
+Street = Room("Street", "The Street is so empety. Nobody takes this street.", 'Store', '', '', 'House')
 
-Garbage = Room("This is where the garbage is at. It stink super bad here.")
-Horse_Pin = Room("Horse_Pin", south=None)
-
-Garbage.south = Horse_Pin
-
-Street = Room("The Street is so empety. Nobody takes this street.")
-Store = Room("Store", north=None)
-House = Room("House", east=None)
-
-Street.north = Store
-Street.east = House
-
-Orange_Trees = Room("Its full of orange trees. Some of them are really good. But looks like there's a"
-                    "building to the east.")
+Orange_Trees = Room("Orange_Trees", "Its full of orange trees. Some of them are really good. But looks like there's a"
+                    "building to the east.", 'House', '', '', 'Farm')
 
 Farm = Room("Farm", east=None)
 House = Room("House", north=None)
