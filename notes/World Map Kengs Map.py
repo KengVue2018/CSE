@@ -8,6 +8,203 @@ class Room(object):
         self.east = east
 
 
+class Item(object):
+    def __init__(self, name):
+        self.name = name
+
+
+class Weapon(Item):
+    def __init__(self, name):
+        super(Weapon, self).__init__(name)
+        self.name = name
+
+
+class Rake(Weapon):
+    def __init__(self, name):
+        super(Rake, self).__init__(name)
+        self.duration = 100
+        self.name = name
+        self.damage = 10
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
+
+
+class BaseballBat(Weapon):
+    def __init__(self, baseball_bat):
+        super(BaseballBat, self).__init__(baseball_bat)
+        self.duration = 100
+        self.baseball_bat = baseball_bat
+        self.damage = 10
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
+
+
+class Hands(Weapon):
+    def __init__(self, hands):
+        super(Hands, self).__init__(hands)
+        self.hands = hands
+        self.damage = 5
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
+
+
+class Knife(Weapon):
+    def __init__(self, knife, name):
+        super(Knife, self).__init__(name)
+        self.duration = 100
+        self.knife = knife
+        self.damage = 20
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
+
+
+class Sword(Weapon):
+    def __init__(self, name):
+        super(Sword, self).__init__(name)
+        self.duration = 100
+        self.damage = 35
+        self.name = name
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
+
+
+class Rifle(Weapon):
+    def __init__(self, rifle, name):
+        super(Rifle, self).__init__(name)
+        self.duration = 100
+        self.rifle = rifle
+        self.name = name
+        self.damage = 40
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
+
+
+class Shield(Item):
+    def __init__(self, shield):
+        super(Shield, self).__init__(shield)
+        self.duration = 100
+        self.shields = shield
+        self.blocks_damage = 10
+        self.use = False
+
+    def duration(self):
+        self.use = True
+        self.duration -= 1
+
+
+class Armor(Item):
+    def __init__(self, name, armor):
+        super(Armor, self).__init__(name)
+        self.armor = armor
+
+
+class Helmet(Armor):
+    def __init__(self, helmet):
+        super(Armor, self).__init__(helmet)
+        self.duration = 10
+        self.blocks_damage = 10
+
+
+class ChestArmor(Armor):
+    def __init__(self, chest_armor):
+        super(Armor, self).__init__(chest_armor)
+        self.duration = 100
+        self.blocks_damage = 25
+
+
+class LegArmor(Armor):
+    def __init__(self, leg_armor):
+        super(Armor, self).__init__(leg_armor)
+        self.duration = 100
+        self.blocks_damage = 25
+
+
+class Boots(Armor):
+    def __init__(self, boots):
+        super(Armor, self).__init__(boots)
+        self.duration = 100
+        self.blocks_damage = 10
+
+
+class Consumables(Item):
+    def __init__(self, name):
+        super(Consumables, self).__init__(name)
+        self.name = name
+
+
+class Apple(Consumables):
+    def __init__(self, apple):
+        super(Consumables, self).__init__(apple)
+        self.heal = 10
+
+
+class HealthPotions(Consumables):
+    def __init(self, health_potions):
+        super(HealthPotions, self).__init__(health_potions)
+        self.heal = 20
+
+
+class WaterBottle(Consumables):
+    def __init__(self, water_bottle):
+        super(WaterBottle, self).__init__(water_bottle)
+        self.heal = 5
+
+
+class Oranges(Consumables):
+    def __init__(self, oranges):
+        super(Oranges, self).__init__(oranges)
+        self.heal = 10
+
+
+class Corn(Consumables):
+    def __init__(self, corn):
+        super(Corn, self).__init__(corn)
+        self.heal = 10
+
+
+class Backpack(Item):
+    def __init__(self, name):
+        super(Backpack, self).__init__(name)
+        self.backpack_space = 10
+
+
+class Character(object):
+    def __init__(self, name, health, weapon, armor):
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage: int):
+        if self.armor.armor_amt > damage:
+            print("No damage was taken because of some AMAZING armor.")
+        else:
+            self.health -= damage - self.armor.armor_amt
+            print("%s has %d health left" % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
+
+
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
                       "direction of west.",
              'Horse_Pin', 'Street', 'Orange_Trees')
@@ -17,7 +214,7 @@ horse_pin = Room("Horse_Pin", "Its the Horse Pin. It stinks but it doesn't smell
 
 garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", '', '', 'Horse_Pin')
 
-street = Room("Street", "The Street is so empety. Nobody takes this street.", 'Store', '', '', 'House')
+street = Room("Street", "The Street is so empty. Nobody takes this street.", 'Store', '', '', 'House')
 
 orange_trees = Room("Orange_Trees", "Its full of orange trees. Some of them are really good. But looks like there's a"
                     "building to the east.", 'House', '', '', 'Farm')
@@ -51,3 +248,52 @@ store = Room("Store", "There's a lot of good stuff to eat here.", '', '', 'Stree
 
 pond = Room("Pond", "It looks like the pond has a pretty clear water but no animals or fish are in there.", '', '',
             'Field', '')
+
+
+class Player(object):
+    def __init__(self, starting_location):
+        self.current_location = starting_location
+        self.inventory = []
+
+    def move(self, new_location):
+        """This moves the player to a new room
+
+        :param self:
+        :param new_location: The room object of which you are going to
+        """
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        """This method searches the current room so see if a room exists in that direction.
+
+        :param self:
+        :param direction:The direction you want to move to.
+        :return The Room object if it exists, or None if it does not.
+        """
+        return getattr(self.current_location, direction)
+
+
+player = Player(house)
+
+playing = True
+directions = ['north', 'west', 'south', 'east', 'up', 'down']
+
+
+while playing:
+    print(player.current_location.name)
+    print(player.current_location.description)
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in directions:
+        try:
+            next_room = player.find_next_room(command)
+            if next_room is None:
+                raise AttributeError
+            player.move(next_room)
+        except AttributeError:
+            print("That path does not exist")
+        except KeyError:
+            print("I can't go that way")
+    else:
+        print("Command Not Found")
