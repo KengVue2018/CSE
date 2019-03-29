@@ -207,47 +207,48 @@ class Character(object):
 
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
                       "direction of west.",
-             'Horse_Pin', 'Street', 'Orange_Trees')
+             'horse pin', 'street', 'orange trees')
 
-horse_pin = Room("Horse_Pin", "Its the Horse Pin. It stinks but it doesn't smell that bad here. "
-                 "Looks like there's a path that keep going up north.", 'Garbage', '', 'House')
+horse_pin = Room("Horse Pin", "Its the Horse Pin. It stinks but it doesn't smell that bad here. "
+                 "Looks like there's a path that keep going up north.", 'garbage', 'none', 'house')
 
-garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", '', '', 'Horse_Pin')
+garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", 'none', 'none', 'horse pin')
 
-street = Room("Street", "The Street is so empty. Nobody takes this street.", 'Store', '', '', 'House')
+street = Room("Street", "The Street is so empty. Nobody takes this street.", 'store', 'none', 'none', 'house')
 
-orange_trees = Room("Orange_Trees", "Its full of orange trees. Some of them are really good. But looks like there's a"
-                    "building to the east.", 'House', '', '', 'Farm')
+orange_trees = Room("Orange Trees", "Its full of orange trees. Some of them are really good. But looks like there's a"
+                    "building to the east.", 'house', 'none', 'none', 'farm')
 
-farm = Room("Farm", "The Farm is full of items, but a lot of them are for farming only.", 'Field', 'Orange_Trees',
-            'Slaughter_House', 'Storage_House')
+farm = Room("Farm", "The Farm is full of items, but a lot of them are for farming only.", 'field', 'orange trees',
+            'slaughter house', 'storage house')
 
-field = Room("Field", "The field is full of corn. But you can barely see anything once your inside it.", 'Pond', '',
-             'Farm', '')
+field = Room("Field", "The field is full of corn. But you can barely see anything once your inside it.", 'pond', 'none',
+             'farm', 'none')
 
-storage_house = Room("Storage_House", "There's a lot of stuff in here. But there is also barely any room in here.",
-                     'Cow_Pin', 'Farm', '', '')
+storage_house = Room("Storage House", "There's a lot of stuff in here. But there is also barely any room in here.",
+                     'cow pin', 'farm', 'none', 'none')
 
-cow_pin = Room("Cow_Pin", "It smells awful but there are barley any cows here. But the pig pin have more pigs.",
-               '', '', 'Cow_Pin', 'Pig_Pin')
+cow_pin = Room("Cow Pin", "It smells awful but there are barley any cows here. But the pig pin have more pigs.",
+               'none', 'none', 'cow pin', 'pig pin')
 
-pig_pin = Room("Pig_Pin", "Wow this place smells even worst then the cow pin but its very quiet for how much pigs "
-                          "that are here.", 'Chicken_Pin', 'Cow_Pin', 'Water_Storage', '')
+pig_pin = Room("Pig Pin", "Wow this place smells even worst then the cow pin but its very quiet for how much pigs "
+                          "that are here.", 'chicken pin', 'cow pin', 'water storage', 'none')
 
-water_storage = Room("Water_Storage", "There are two big tubes here that holds water here. There is also a "
-                                      "car here too.", 'Pig_Pin', '', '', '')
+water_storage = Room("Water Storage", "There are two big tubes here that holds water here. There is also a "
+                                      "car here too.", 'pig_pin', 'none', 'none', 'none')
 
-chicken_pin = Room("Chicken_Pin", "It doesn't smell that bad as the other 2 but it sure is louder then the others.",
-                   '', 'Apple_Trees', 'Pig_Pin', '')
+chicken_pin = Room("Chicken Pin", "It doesn't smell that bad as the other 2 but it sure is louder then the others.",
+                   'none', 'apple trees', 'pig pin', 'none')
 
-apple_trees = Room("Apple_Trees", "There are a lot of apple trees here. This could be a good spot to "
-                                  "play hide and seek.", '', '', '', 'Chicken_Pin')
+apple_trees = Room("Apple Trees", "There are a lot of apple trees here. This could be a good spot to "
+                                  "play hide and seek.", 'none', 'none', 'none', 'chicken pin')
 
-store = Room("Store", "There's a lot of good stuff to eat here.", '', '', 'Street', '')
+store = Room("Store", "There's a lot of good stuff to eat here.", 'none', 'none', 'street', 'none')
 
 
-pond = Room("Pond", "It looks like the pond has a pretty clear water but no animals or fish are in there.", '', '',
-            'Field', '')
+pond = Room("Pond", "It looks like the pond has a pretty clear water but no animals or fish are in there.", 'none',
+            'none',
+            'field', 'none')
 
 
 class Player(object):

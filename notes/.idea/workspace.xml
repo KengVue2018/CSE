@@ -65,13 +65,13 @@
     <session id="459727595">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="2" />
-          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="2" />
           <entry key="project.open.time.37" value="6" />
           <entry key="project.open.time.38" value="2" />
@@ -85,7 +85,7 @@
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.55" value="2" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -100,12 +100,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="14082" />
+          <entry key="py" value="14284" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="14082" />
+          <entry key="Python" value="14284" />
         </counts>
       </usages-collector>
     </session>
@@ -136,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="73" column="34" lean-forward="true" selection-start-line="52" selection-end-line="73" selection-end-column="34" />
+            <state relative-caret-position="1241">
+              <caret line="73" column="34" selection-start-line="52" selection-end-line="73" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -186,8 +186,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/World Map Kengs Map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5083">
-              <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+            <state relative-caret-position="85">
+              <caret line="208" column="43" lean-forward="true" selection-start-line="208" selection-start-column="43" selection-end-line="208" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -255,7 +255,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +266,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,7 +454,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -535,6 +535,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="34" selection-start-line="52" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KENGS DICTIONARY WORLD MAP.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -568,20 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Object Notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/World Map OOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="73" column="34" lean-forward="true" selection-start-line="52" selection-end-line="73" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Kengs Items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -589,10 +582,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Object Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/World Map Kengs Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5083">
-          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+        <state relative-caret-position="85">
+          <caret line="208" column="43" lean-forward="true" selection-start-line="208" selection-start-column="43" selection-end-line="208" selection-end-column="43" />
         </state>
       </provider>
     </entry>
