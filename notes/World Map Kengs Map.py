@@ -207,48 +207,48 @@ class Character(object):
 
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
                       "direction of west.",
-             'horse pin', 'street', 'orange trees')
+             'horse_pin', 'street', 'orange_trees')
 
 horse_pin = Room("Horse Pin", "Its the Horse Pin. It stinks but it doesn't smell that bad here. "
-                 "Looks like there's a path that keep going up north.", 'garbage', 'none', 'house')
+                 "Looks like there's a path that keep going up north.", 'garbage', None, 'house')
 
-garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", 'none', 'none', 'horse pin')
+garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", None, None, 'horse pin')
 
-street = Room("Street", "The Street is so empty. Nobody takes this street.", 'store', 'none', 'none', 'house')
+street = Room("Street", "The Street is so empty. Nobody takes this street.", 'store', None, None, 'house')
 
 orange_trees = Room("Orange Trees", "Its full of orange trees. Some of them are really good. But looks like there's a"
-                    "building to the east.", 'house', 'none', 'none', 'farm')
+                    "building to the east.", 'house', None, None, 'farm')
 
-farm = Room("Farm", "The Farm is full of items, but a lot of them are for farming only.", 'field', 'orange trees',
-            'slaughter house', 'storage house')
+farm = Room("Farm", "The Farm is full of items, but a lot of them are for farming only.", 'field', 'orange_trees',
+            'slaughter_house', 'storage_house')
 
-field = Room("Field", "The field is full of corn. But you can barely see anything once your inside it.", 'pond', 'none',
-             'farm', 'none')
+field = Room("Field", "The field is full of corn. But you can barely see anything once your inside it.", 'pond', None,
+             'farm', None)
 
 storage_house = Room("Storage House", "There's a lot of stuff in here. But there is also barely any room in here.",
-                     'cow pin', 'farm', 'none', 'none')
+                     'cow_pin', 'farm', None, None)
 
 cow_pin = Room("Cow Pin", "It smells awful but there are barley any cows here. But the pig pin have more pigs.",
-               'none', 'none', 'cow pin', 'pig pin')
+               None, None, 'cow_pin', 'pig_pin')
 
 pig_pin = Room("Pig Pin", "Wow this place smells even worst then the cow pin but its very quiet for how much pigs "
-                          "that are here.", 'chicken pin', 'cow pin', 'water storage', 'none')
+                          "that are here.", 'chicken_pin', 'cow_pin', 'water_storage', None)
 
 water_storage = Room("Water Storage", "There are two big tubes here that holds water here. There is also a "
-                                      "car here too.", 'pig_pin', 'none', 'none', 'none')
+                                      "car here too.", 'pig_pin', None, None, None)
 
 chicken_pin = Room("Chicken Pin", "It doesn't smell that bad as the other 2 but it sure is louder then the others.",
-                   'none', 'apple trees', 'pig pin', 'none')
+                   None, 'apple_trees', 'pig_pin', None)
 
 apple_trees = Room("Apple Trees", "There are a lot of apple trees here. This could be a good spot to "
-                                  "play hide and seek.", 'none', 'none', 'none', 'chicken pin')
+                                  "play hide and seek.", None, None, None, 'chicken_pin')
 
-store = Room("Store", "There's a lot of good stuff to eat here.", 'none', 'none', 'street', 'none')
+store = Room("Store", "There's a lot of good stuff to eat here.", None, None, 'street', None)
 
 
-pond = Room("Pond", "It looks like the pond has a pretty clear water but no animals or fish are in there.", 'none',
-            'none',
-            'field', 'none')
+pond = Room("Pond", "It looks like the pond has a pretty clear water but no animals or fish are in there.", None,
+            None,
+            'field', None)
 
 
 class Player(object):
