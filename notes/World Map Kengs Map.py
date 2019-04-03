@@ -186,6 +186,25 @@ class Backpack(Item):
         self.backpack_space = 10
 
 
+rake = Rake()
+baseball_bat = BaseballBat()
+hands = Hands()
+knife = Knife()
+sword = Sword()
+rifle = Rifle()
+shield = Shield()
+helmet = Helmet()
+chest_armor = ChestArmor()
+leg_armor = LegArmor()
+boots = Boots()
+backpack = Backpack()
+corn = Corn()
+oranges = Oranges()
+water_bottle = WaterBottle()
+health_potion = HealthPotions()
+apple = Apple()
+
+
 class Character(object):
     def __init__(self, name, health, weapon, armor):
         self.name = name
@@ -247,8 +266,7 @@ store = Room("Store", "There's a lot of good stuff to eat here.", None, None, 's
 
 
 pond = Room("Pond", "It looks like the pond has a pretty clear water but no animals or fish are in there.", None,
-            None,
-            'field', None)
+            None, 'field', None)
 
 
 class Player(object):
