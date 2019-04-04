@@ -1,11 +1,14 @@
 class Room(object):
-    def __init__(self, name, description, north=None, west=None, south=None, east=None):
+    def __init__(self, name, description, north=None, west=None, south=None, east=None, items=None):
+        if items is None:
+            items = []
         self.name = name
         self.description = description
         self.north = north
         self.west = west
         self.south = south
         self.east = east
+        self.items = items
 
 
 class Item(object):
@@ -58,10 +61,9 @@ class Hands(Weapon):
 
 
 class Knife(Weapon):
-    def __init__(self, knife, name):
+    def __init__(self, name):
         super(Knife, self).__init__(name)
         self.duration = 100
-        self.knife = knife
         self.damage = 20
         self.use = False
 
@@ -84,10 +86,9 @@ class Sword(Weapon):
 
 
 class Rifle(Weapon):
-    def __init__(self, rifle, name):
+    def __init__(self, name):
         super(Rifle, self).__init__(name)
         self.duration = 100
-        self.rifle = rifle
         self.name = name
         self.damage = 40
         self.use = False
@@ -101,7 +102,6 @@ class Shield(Item):
     def __init__(self, shield):
         super(Shield, self).__init__(shield)
         self.duration = 100
-        self.shields = shield
         self.blocks_damage = 10
         self.use = False
 
@@ -186,23 +186,23 @@ class Backpack(Item):
         self.backpack_space = 10
 
 
-rake = Rake()
-baseball_bat = BaseballBat()
-hands = Hands()
-knife = Knife()
-sword = Sword()
-rifle = Rifle()
-shield = Shield()
-helmet = Helmet()
-chest_armor = ChestArmor()
-leg_armor = LegArmor()
-boots = Boots()
-backpack = Backpack()
-corn = Corn()
-oranges = Oranges()
-water_bottle = WaterBottle()
-health_potion = HealthPotions()
-apple = Apple()
+rake = Rake('Rake')
+baseball_bat = BaseballBat('BaseBallBat')
+hands = Hands('Hands')
+knife = Knife('Knife')
+sword = Sword('Sword')
+rifle = Rifle('Rifle')
+shield = Shield('Shield')
+helmet = Helmet('Helmet')
+chest_armor = ChestArmor('ChestArmor')
+leg_armor = LegArmor('LegArmor')
+boots = Boots('Boots')
+backpack = Backpack('Backpack')
+corn = Corn('Corn')
+oranges = Oranges('Orange')
+water_bottle = WaterBottle('WaterBottle')
+health_potion = HealthPotions('HealthPotion')
+apple = Apple('Apple')
 
 
 class Character(object):
@@ -226,7 +226,7 @@ class Character(object):
 
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
                       "direction of west.",
-             'horse_pin', 'street', 'orange_trees')
+             'horse_pin', 'street', 'orange_trees', None, [apple])
 
 horse_pin = Room("Horse Pin", "Its the Horse Pin. It stinks but it doesn't smell that bad here. "
                  "Looks like there's a path that keep going up north.", 'garbage', None, 'house')
@@ -289,8 +289,8 @@ class Player(object):
         :param direction:The direction you want to move to.
         :return The Room object if it exists, or None if it does not.
         """
-        return getattr(self.current_location, direction)
-
+        name_of_room = getattr(self.current_location, direction)
+        return globals()[name_of_room]
 
 player = Player(house)
 
@@ -301,6 +301,12 @@ directions = ['north', 'west', 'south', 'east', 'up', 'down']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
+    print()
+    if len(player.current_location.items) > 0:
+        print("The following items are in the room:")
+        for item in player.current_location.items:
+            print(item.name)
+        print()
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
