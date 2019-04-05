@@ -226,47 +226,50 @@ class Character(object):
 
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
                       "direction of west.",
-             'horse_pin', 'street', 'orange_trees', None, [apple])
+             'horse_pin', 'street', 'orange_trees', None, [knife, backpack, rifle, WaterBottle])
 
 horse_pin = Room("Horse Pin", "Its the Horse Pin. It stinks but it doesn't smell that bad here. "
-                 "Looks like there's a path that keep going up north.", 'garbage', None, 'house')
+                 "Looks like there's a path that keep going up north.", 'garbage', None, 'house', None, [Rake,
+                                                                                                         WaterBottle])
 
-garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", None, None, 'horse pin')
+garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", None, None, 'horse pin', None,
+               [])
 
-street = Room("Street", "The Street is so empty. Nobody takes this street.", 'store', None, None, 'house')
+street = Room("Street", "The Street is so empty. Nobody takes this street.", 'store', None, None, 'house', [])
 
 orange_trees = Room("Orange Trees", "Its full of orange trees. Some of them are really good. But looks like there's a"
-                    "building to the east.", 'house', None, None, 'farm')
+                    "building to the east.", 'house', None, None, 'farm', [Oranges])
 
 farm = Room("Farm", "The Farm is full of items, but a lot of them are for farming only.", 'field', 'orange_trees',
-            'slaughter_house', 'storage_house')
+            'slaughter_house', 'storage_house', [Helmet, HealthPotions])
 
 field = Room("Field", "The field is full of corn. But you can barely see anything once your inside it.", 'pond', None,
-             'farm', None)
+             'farm', None, [Corn])
 
 storage_house = Room("Storage House", "There's a lot of stuff in here. But there is also barely any room in here.",
-                     'cow_pin', 'farm', None, None)
+                     'cow_pin', 'farm', None, None, [Sword, HealthPotions])
 
 cow_pin = Room("Cow Pin", "It smells awful but there are barley any cows here. But the pig pin have more pigs.",
-               None, None, 'cow_pin', 'pig_pin')
+               None, None, 'cow_pin', 'pig_pin', [])
 
 pig_pin = Room("Pig Pin", "Wow this place smells even worst then the cow pin but its very quiet for how much pigs "
-                          "that are here.", 'chicken_pin', 'cow_pin', 'water_storage', None)
+                          "that are here.", 'chicken_pin', 'cow_pin', 'water_storage', None, [])
 
 water_storage = Room("Water Storage", "There are two big tubes here that holds water here. There is also a "
-                                      "car here too.", 'pig_pin', None, None, None)
+                                      "car here too.", 'pig_pin', None, None, None, [WaterBottle])
 
 chicken_pin = Room("Chicken Pin", "It doesn't smell that bad as the other 2 but it sure is louder then the others.",
-                   None, 'apple_trees', 'pig_pin', None)
+                   None, 'apple_trees', 'pig_pin', None, [])
 
 apple_trees = Room("Apple Trees", "There are a lot of apple trees here. This could be a good spot to "
-                                  "play hide and seek.", None, None, None, 'chicken_pin')
+                                  "play hide and seek.", None, None, None, 'chicken_pin', [Apple])
 
-store = Room("Store", "There's a lot of good stuff to eat here.", None, None, 'street', None)
+store = Room("Store", "There's a lot of good stuff to eat here. But I don't like the food there.", None,
+             None, 'street', None, [])
 
 
 pond = Room("Pond", "It looks like the pond has a pretty clear water but no animals or fish are in there.", None,
-            None, 'field', None)
+            None, 'field', None, [])
 
 
 class Player(object):
@@ -291,6 +294,7 @@ class Player(object):
         """
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
+
 
 player = Player(house)
 
