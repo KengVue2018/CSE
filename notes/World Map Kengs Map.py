@@ -1,5 +1,5 @@
 class Room(object):
-    def __init__(self, name, description, north=None, west=None, south=None, east=None, items=None):
+    def __init__(self, name, description, north=None, west=None, south=None, east=None, items=None, character=None):
         if items is None:
             items = []
         self.name = name
@@ -9,6 +9,12 @@ class Room(object):
         self.south = south
         self.east = east
         self.items = items
+        self.character = character
+
+
+class Vehicle(object):
+    def __init__(self, name):
+        self.name = name
 
 
 class Item(object):
@@ -185,7 +191,25 @@ class Backpack(Item):
         super(Backpack, self).__init__(name)
         self.backpack_space = 10
 
-class Goblins()
+
+class Zombies(Item):
+    def __init__(self, name):
+        super(Zombies, self).__init__(name)
+        self.health = 100
+
+
+class Car(Vehicle):
+    def __init__(self, name, milage):
+        super(Car, self).__init__(name)
+        self.engine_status = False
+        self.fuel = 100
+        self.milage = milage
+
+    def start_engine(self):
+        self.start_engine = True
+        print("You can turn the key and the car turns on.")
+
+
 rake = Rake('Rake')
 baseball_bat = BaseballBat('BaseBallBat')
 hands = Hands('Hands')
@@ -226,11 +250,11 @@ class Character(object):
 
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
                       "direction of west.",
-             'horse_pin', 'street', 'orange_trees', None, [knife, backpack, rifle])
+             'horse_pin', 'street', 'orange_trees', None, [knife, backpack, rifle, water_bottle],
+             [Zombies("Zombies")])
 
 horse_pin = Room("Horse Pin", "Its the Horse Pin. It stinks but it doesn't smell that bad here. "
-                 "Looks like there's a path that keep going up north.", 'garbage', None, 'house', None, [Rake,
-                                                                                                        ])
+                 "Looks like there's a path that keep going up north.", 'garbage', None, 'house', None, [Rake("Rake")])
 
 garbage = Room("Garbage", "This is where the garbage is at. It stink super bad here.", None, None, 'horse pin', None,
                [chest_armor])
@@ -274,6 +298,7 @@ pond = Room("Pond", "It looks like the pond has a pretty clear water but no anim
 slaughter_house = Room("Slaughter House", "It stinks and there's a lot of blood here. But there is a lot tof weapons "
                                           "here.", 'farm', None, None, None, [knife, rifle, rake])
 
+
 class Player(object):
     def __init__(self, starting_location):
         self.current_location = starting_location
@@ -312,6 +337,11 @@ while playing:
         print("The following items are in the room:")
         for item in player.current_location.items:
             print(item.name)
+        print()
+    if len(player.current_location.character) > 0:
+        print("There is a zombie here. Try to kill it.")
+        for character in player.current_location.character:
+            print(character.name)
         print()
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
