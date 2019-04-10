@@ -327,7 +327,6 @@ player = Player(house)
 
 playing = True
 directions = ['north', 'west', 'south', 'east', 'up', 'down']
-short_directions = ['n', 'w', 's', 'e', 'u', 'd']
 
 
 while playing:
@@ -340,9 +339,6 @@ while playing:
             print(item.name)
         print()
     command = input(">_")
-    if command.lower() in short_directions:
-        pos =short_directions.index(command.lower())
-        command = directions[pos]
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.lower() in directions:
