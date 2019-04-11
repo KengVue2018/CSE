@@ -1,3 +1,6 @@
+import random
+
+
 class Room(object):
     def __init__(self, name, description, north=None, west=None, south=None, east=None, items=None, character=None):
         if items is None:
@@ -23,9 +26,9 @@ class Item(object):
 
 
 class Weapon(Item):
-    def __init__(self, name):
+    def __init__(self, name, damage):
         super(Weapon, self).__init__(name)
-        self.name = name
+        self.damage = damage
 
 
 class Rake(Weapon):
@@ -33,11 +36,8 @@ class Rake(Weapon):
         super(Rake, self).__init__(name)
         self.duration = 100
         self.name = name
-        self.damage = 10
-        self.use = False
 
     def duration(self):
-        self.use = True
         self.duration -= 1
 
 
@@ -80,11 +80,19 @@ class Knife(Weapon):
 
 class Sword(Weapon):
     def __init__(self, name):
-        super(Sword, self).__init__(name)
-        self.duration = 100
-        self.damage = 35
-        self.name = name
-        self.use = False
+        super(Sword, self).__init__("Sword", 25)
+        self.minimum_damage = 25
+        self.max_damage = 30
+
+    def heavy_attack(self):
+        _number = random.randint(self.minimum_damage, self.max_damage + 1)
+        if self.damage > 0:
+            print("You swing and you did", _number)
+
+    def light_attack(self):
+        _number = random.randint(self.minimum_damage - 1, self.minimum_damage)
+        if self.damage > 0:
+            print("You swing and it did", _number)
 
     def duration(self):
         self.use = True
@@ -192,7 +200,25 @@ class Backpack(Item):
         self.backpack_space = 10
 
 
-class Zombies(Item):
+class Character(object):
+    def __init__(self, name, health, weapon, armor):
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage):
+        self.health -= damage
+        if self.health < 0:
+            self.health = 0
+        print("%s attacks %s health left." % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage" %  (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
+
+
+class Zombies(object):
     def __init__(self, name):
         super(Zombies, self).__init__(name)
         self.health = 100
@@ -227,25 +253,6 @@ oranges = Oranges('Orange')
 water_bottle = WaterBottle('WaterBottle')
 health_potion = HealthPotions('HealthPotion')
 apple = Apple('Apple')
-
-
-class Character(object):
-    def __init__(self, name, health, weapon, armor):
-        self.name = name
-        self.health = health
-        self.weapon = weapon
-        self.armor = armor
-
-    def take_damage(self, damage: int):
-        if self.armor.armor_amt > damage:
-            print("No damage was taken because of some AMAZING armor.")
-        else:
-            self.health -= damage - self.armor.armor_amt
-            print("%s has %d health left" % (self.name, self.health))
-
-    def attack(self, target):
-        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
-        target.take_damage(self.weapon.damage)
 
 
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
@@ -300,17 +307,26 @@ slaughter_house = Room("Slaughter House", "It stinks and there's a lot of blood 
 
 
 class Player(object):
-    def __init__(self, starting_location):
+    def __init__(self, starting_location, current_class, pick_up, drop, weapon):
+        self.health = 100
+        self.name = player
         self.current_location = starting_location
+        self.player_class = current_class
         self.inventory = []
+        self.pick_up = pick_up
+        self.drop = drop
+        self.weapon = weapon
 
     def move(self, new_location):
         """This moves the player to a new room
 
-        :param self:
-        :param new_location: The room object of which you are going to
+        :param new_location: The variable containing a room object
         """
-        self.current_location = new_location
+        if new_location is not None:
+            self.current_location = new_location
+
+        else:
+            print("You can't go that way.")
 
     def find_next_room(self, direction):
         """This method searches the current room so see if a room exists in that direction.
@@ -321,6 +337,16 @@ class Player(object):
         """
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
+
+    def take_damage(self, damage):
+        self.health -= damage
+        if self.health < 0:
+            self.health = 0
+        print("%s attacks %s health left." % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage" %  (self.name, target.name, self.weapon.damage))
+        target.take_damage(self.weapon.damage)
 
 
 player = Player(house)
