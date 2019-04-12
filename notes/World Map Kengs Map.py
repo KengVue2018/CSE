@@ -15,11 +15,6 @@ class Room(object):
         self.character = character
 
 
-class Vehicle(object):
-    def __init__(self, name):
-        self.name = name
-
-
 class Item(object):
     def __init__(self, name):
         self.name = name
@@ -33,49 +28,52 @@ class Weapon(Item):
 
 class Rake(Weapon):
     def __init__(self, name):
-        super(Rake, self).__init__(name)
-        self.duration = 100
-        self.name = name
+        super(Rake, self).__init__("Rake", 10)
+        self.minimum_damage = 10
 
-    def duration(self):
-        self.duration -= 1
+    def light_attack(self):
+        _number = random.randint(self.minimum_damage, self.minimum_damage)
+        if self.damage > 0:
+            print("You did", _number)
 
 
 class BaseballBat(Weapon):
-    def __init__(self, baseball_bat):
-        super(BaseballBat, self).__init__(baseball_bat)
-        self.duration = 100
-        self.baseball_bat = baseball_bat
-        self.damage = 10
-        self.use = False
+    def __init__(self):
+        super(BaseballBat, self).__init__("BaseBall_Bat", 15)
+        self.minimum_damage = 15
+        self.max_damage = 20
 
-    def duration(self):
-        self.use = True
-        self.duration -= 1
+    def light_attack(self):
+        _number = random.randint(self.minimum_damage, self.minimum_damage)
+        if self.damage > 0:
+            print("You swing and you did", _number)
+
+    def heavy_attack(self):
+        _number = random.randint(self.minimum_damage, self.max_damage + 1)
+        if self.damage > 0:
+            print("You swing and you did", _number)
 
 
 class Hands(Weapon):
-    def __init__(self, hands):
-        super(Hands, self).__init__(hands)
-        self.hands = hands
-        self.damage = 5
-        self.use = False
+    def __init__(self):
+        super(Hands, self).__init__("Hands", 5)
+        self.minimum_damage = 5
 
-    def duration(self):
-        self.use = True
-        self.duration -= 1
+    def light_attack(self):
+        _number = random.randint(self.minimum_damage, self.minimum_damage)
+        if self.damage > 0:
+            print("You did", _number)
 
 
 class Knife(Weapon):
     def __init__(self, name):
-        super(Knife, self).__init__(name)
-        self.duration = 100
-        self.damage = 20
-        self.use = False
+        super(Knife, self).__init__("Knife", 15)
+        self.minimum_damage = 15
 
-    def duration(self):
-        self.use = True
-        self.duration -= 1
+    def light_attack(self):
+        _number = random.randint(self.minimum_damage, self.minimum_damage)
+        if self.damage > 0:
+            print("You did", _number)
 
 
 class Sword(Weapon):
@@ -94,22 +92,16 @@ class Sword(Weapon):
         if self.damage > 0:
             print("You swing and it did", _number)
 
-    def duration(self):
-        self.use = True
-        self.duration -= 1
-
 
 class Rifle(Weapon):
     def __init__(self, name):
-        super(Rifle, self).__init__(name)
-        self.duration = 100
-        self.name = name
-        self.damage = 40
-        self.use = False
+        super(Rifle, self).__init__("Rifle", 35)
+        self.max_damage = 35
 
-    def duration(self):
-        self.use = True
-        self.duration -= 1
+    def shoot(self):
+        _number = random.randint(self.max_damage, self.max_damage)
+        if self.damage > 0:
+            print("You have fire a shot and you did", _number)
 
 
 class Shield(Item):
@@ -118,10 +110,6 @@ class Shield(Item):
         self.duration = 100
         self.blocks_damage = 10
         self.use = False
-
-    def duration(self):
-        self.use = True
-        self.duration -= 1
 
 
 class Armor(Item):
@@ -237,8 +225,8 @@ class Car(Vehicle):
 
 
 rake = Rake('Rake')
-baseball_bat = BaseballBat('BaseBallBat')
-hands = Hands('Hands')
+baseball_bat = BaseballBat()
+hands = Hands()
 knife = Knife('Knife')
 sword = Sword('Sword')
 rifle = Rifle('Rifle')
@@ -383,3 +371,31 @@ while playing:
             print("I can't go that way")
     else:
         print("Command Not Found")
+
+    if "Take " in command:
+        item_name = command[5:]
+        item_object = None
+
+        for item in player.current_location.items:
+            if item.name == item_name:
+                item_object = item
+
+        if item_object is None:
+            player.inventory.append(item_object)
+            player.current_location.items.remove(item_object)
+            print("You have added to your inventory.")
+
+    if "Drop " in command:
+        item_name = command[5:]
+        item_object = None
+
+        for item in player.inventory:
+             if item.name == item_name:
+                 item_object = item
+
+            if item_object is not None:
+                player.inventory.remove(item_object)
+                player.current_location.items.append(item_object)
+                print("1")
+
+
