@@ -28,7 +28,8 @@ class Weapon(Item):
 
 class Rake(Weapon):
     def __init__(self, name):
-        super(Rake, self).__init__("Rake", 10)
+        super(Rake, self).__init__(name, 10)
+        self.name = name
         self.minimum_damage = 10
 
     def light_attack(self):
@@ -38,8 +39,9 @@ class Rake(Weapon):
 
 
 class BaseballBat(Weapon):
-    def __init__(self):
-        super(BaseballBat, self).__init__("BaseBall_Bat", 15)
+    def __init__(self, name):
+        super(BaseballBat, self).__init__(name, 15)
+        self.name = name
         self.minimum_damage = 15
         self.max_damage = 20
 
@@ -55,8 +57,9 @@ class BaseballBat(Weapon):
 
 
 class Hands(Weapon):
-    def __init__(self):
-        super(Hands, self).__init__("Hands", 5)
+    def __init__(self, name):
+        super(Hands, self).__init__(name, 5)
+        self.name = name
         self.minimum_damage = 5
 
     def light_attack(self):
@@ -67,7 +70,8 @@ class Hands(Weapon):
 
 class Knife(Weapon):
     def __init__(self, name):
-        super(Knife, self).__init__("Knife", 15)
+        super(Knife, self).__init__(name, 15)
+        self.name = name
         self.minimum_damage = 15
 
     def light_attack(self):
@@ -78,7 +82,8 @@ class Knife(Weapon):
 
 class Sword(Weapon):
     def __init__(self, name):
-        super(Sword, self).__init__("Sword", 25)
+        super(Sword, self).__init__(name, 25)
+        self.name = name
         self.minimum_damage = 25
         self.max_damage = 30
 
@@ -95,7 +100,8 @@ class Sword(Weapon):
 
 class Rifle(Weapon):
     def __init__(self, name):
-        super(Rifle, self).__init__("Rifle", 35)
+        super(Rifle, self).__init__(name, 35)
+        self.name = name
         self.max_damage = 35
 
     def shoot(self):
@@ -105,43 +111,46 @@ class Rifle(Weapon):
 
 
 class Shield(Item):
-    def __init__(self, shield):
-        super(Shield, self).__init__(shield)
-        self.duration = 100
-        self.blocks_damage = 10
-        self.use = False
+    def __init__(self, name):
+        super(Shield, self).__init__(name)
+        self.name = name
 
 
 class Armor(Item):
-    def __init__(self, name, armor):
+    def __init__(self, name, duration):
         super(Armor, self).__init__(name)
-        self.armor = armor
+        self.name = name
+        self.duration = duration
 
 
 class Helmet(Armor):
-    def __init__(self, helmet):
-        super(Armor, self).__init__(helmet)
-        self.duration = 10
+    def __init__(self, name):
+        super(Armor, self).__init__(name)
+        self.name = name
+        self.duration = 100
         self.blocks_damage = 10
 
 
 class ChestArmor(Armor):
-    def __init__(self, chest_armor):
-        super(Armor, self).__init__(chest_armor)
+    def __init__(self, name):
+        super(Armor, self).__init__(name)
+        self.name = name
         self.duration = 100
         self.blocks_damage = 25
 
 
 class LegArmor(Armor):
-    def __init__(self, leg_armor):
-        super(Armor, self).__init__(leg_armor)
+    def __init__(self, name):
+        super(Armor, self).__init__(name)
+        self.name = name
         self.duration = 100
         self.blocks_damage = 25
 
 
 class Boots(Armor):
-    def __init__(self, boots):
-        super(Armor, self).__init__(boots)
+    def __init__(self, name):
+        super(Armor, self).__init__(name)
+        self.name = name
         self.duration = 100
         self.blocks_damage = 10
 
@@ -153,39 +162,54 @@ class Consumables(Item):
 
 
 class Apple(Consumables):
-    def __init__(self, apple):
-        super(Consumables, self).__init__(apple)
+    def __init__(self, name):
+        super(Consumables, self).__init__(name)
+        self.name = name
         self.heal = 10
 
 
 class HealthPotions(Consumables):
-    def __init(self, health_potions):
-        super(HealthPotions, self).__init__(health_potions)
+    def __init(self, name):
+        super(HealthPotions, self).__init__(name)
+        self.name = name
         self.heal = 20
 
 
 class WaterBottle(Consumables):
-    def __init__(self, water_bottle):
-        super(WaterBottle, self).__init__(water_bottle)
+    def __init__(self, name):
+        super(WaterBottle, self).__init__(name)
+        self.name = name
         self.heal = 5
 
 
 class Oranges(Consumables):
-    def __init__(self, oranges):
-        super(Oranges, self).__init__(oranges)
+    def __init__(self, name):
+        super(Oranges, self).__init__(name)
+        self.name = name
         self.heal = 10
 
 
 class Corn(Consumables):
-    def __init__(self, corn):
-        super(Corn, self).__init__(corn)
+    def __init__(self, name):
+        super(Corn, self).__init__(name)
+        self.name = name
         self.heal = 10
 
 
 class Backpack(Item):
-    def __init__(self, name):
+    def __init__(self, name, description, space):
         super(Backpack, self).__init__(name)
-        self.backpack_space = 10
+        self.name = name
+        self.description = description
+        self.space = space
+
+
+    def little_backpack(self):
+        self.space = 6
+
+
+    def big_backpack(self):
+        self.space = 10
 
 
 class Character(object):
@@ -212,35 +236,23 @@ class Zombies(object):
         self.health = 100
 
 
-class Car(Vehicle):
-    def __init__(self, name, milage):
-        super(Car, self).__init__(name)
-        self.engine_status = False
-        self.fuel = 100
-        self.milage = milage
-
-    def start_engine(self):
-        self.start_engine = True
-        print("You can turn the key and the car turns on.")
-
-
-rake = Rake('Rake')
-baseball_bat = BaseballBat()
-hands = Hands()
-knife = Knife('Knife')
-sword = Sword('Sword')
-rifle = Rifle('Rifle')
-shield = Shield('Shield')
-helmet = Helmet('Helmet')
-chest_armor = ChestArmor('ChestArmor')
-leg_armor = LegArmor('LegArmor')
-boots = Boots('Boots')
-backpack = Backpack('Backpack')
-corn = Corn('Corn')
-oranges = Oranges('Orange')
-water_bottle = WaterBottle('WaterBottle')
-health_potion = HealthPotions('HealthPotion')
-apple = Apple('Apple')
+rake = Rake
+baseball_bat = BaseballBat
+hands = Hands
+knife = Knife
+sword = Sword
+rifle = Rifle
+shield = Shield
+helmet = Helmet
+chest_armor = ChestArmor
+leg_armor = LegArmor
+boots = Boots
+backpack = Backpack
+corn = Corn
+oranges = Oranges
+water_bottle = WaterBottle
+health_potion = HealthPotions
+apple = Apple
 
 
 house = Room("House", "It's your house. And you are in it. It is some how very quiet. But you hear noise in the "
@@ -397,5 +409,43 @@ while playing:
                 player.inventory.remove(item_object)
                 player.current_location.items.append(item_object)
                 print("1")
+
+
+        if "inventory" in command:
+                if player.inventory is not None:
+                    print("The following items are in your inventory:")
+                    for num, item in enumerate(player.inventory):
+                        print(str(num + 1) + ": " + item.name)
+
+
+        if "equip" in command:
+            item_name = command[6:]
+            item_object = None
+
+            for item in player.inventory:
+                 if item_name == item_name:
+                     item_object = item
+
+
+        if item_object is not None:
+            print("Equip.")
+            player.weapon = item_object
+
+
+        if "unequipped" is command:
+            item_name = command[8:]
+            item_object = None
+            player.getattr(item_name)
+            if item_object is not None:
+                player.weapon.remove(item_object)
+                player.inventory.append(item_object)
+                print("Unequipped")
+
+
+
+
+
+
+
 
 
