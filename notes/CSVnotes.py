@@ -59,3 +59,21 @@ with open("Book1.csv") as old_csv:
             # print(int(old_number) + 1)
             # print(old-number
 print("DONE")
+
+
+string = input(">_")
+
+
+def valid_card_number(num: str):
+    print(string[:-1])
+    print(reverse_it(string))
+
+
+print(valid_card_number(string))
+
+
+"""
+list_num = list(number)
+for index in range(len(list_num)):
+    list_num[index] = int(list_num(index))
+"""
