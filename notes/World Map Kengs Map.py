@@ -401,9 +401,9 @@ while playing:
         item_name = command[5:]
         item_object = None
 
-        for item in player.inventory:
-            if item.name == item_name:
-                 item_object = item
+    for item in player.inventory:
+        if item.name == item_name:
+            item_object = item
 
             if item_object is not None:
                 player.inventory.remove(item_object)
@@ -411,18 +411,18 @@ while playing:
                 print("1")
 
     if "inventory" in command:
-                if player.inventory is not None:
-                    print("The following items are in your inventory:")
-                    for num, item in enumerate(player.inventory):
-                        print(str(num + 1) + ": " + item.name)
+        if player.inventory is not None:
+            print("The following items are in your inventory:")
+            for num, item in enumerate(player.inventory):
+                print(str(num + 1) + ": " + item.name)
 
     if "equip" in command:
         item_name = command[6:]
         item_object = None
 
         for item in player.inventory:
-                if item_name == item_name:
-                    item_object = item
+            if item_name == item_name:
+                item_object = item
 
     if item_object is not None:
         print("Equip.")

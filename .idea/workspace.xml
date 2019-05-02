@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/CSVnotes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+            <state relative-caret-position="352">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
@@ -64,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/notes/Validator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -73,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/notes/Book1.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="16" />
+              <caret line="9" column="14" selection-start-line="9" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -81,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/World Map Kengs Map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6372">
-              <caret line="438" selection-start-line="438" selection-end-line="438" />
+            <state relative-caret-position="280">
+              <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
             </state>
           </provider>
         </entry>
@@ -129,7 +129,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/helloworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="119">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
@@ -166,10 +166,10 @@
         <option value="$PROJECT_DIR$/notes/KENG'S TRUE WORLD MAP.py" />
         <option value="$PROJECT_DIR$/notes/KENGS HANGMAN V.2.py" />
         <option value="$PROJECT_DIR$/notes/Object Notes.py" />
-        <option value="$PROJECT_DIR$/notes/World Map Kengs Map.py" />
         <option value="$PROJECT_DIR$/notes/Book1.csv" />
         <option value="$PROJECT_DIR$/notes/MyNewFile.csv" />
         <option value="$PROJECT_DIR$/notes/Validator.py" />
+        <option value="$PROJECT_DIR$/notes/World Map Kengs Map.py" />
         <option value="$PROJECT_DIR$/notes/CSVnotes.py" />
       </list>
     </option>
@@ -392,18 +392,18 @@
       <updated>1540310885202</updated>
       <workItem from="1556208289324" duration="2556000" />
       <workItem from="1556293755524" duration="3496000" />
-      <workItem from="1556635819705" duration="5965000" />
+      <workItem from="1556635819705" duration="6134000" />
+      <workItem from="1556808545917" duration="6434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12017000" />
+    <option name="totallyTimeSpent" value="18620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.33315566" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.336887" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.2473525" />
       <window_info id="Favorites" order="2" sideWeight="0.502455" side_tool="true" weight="0.26626325" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -458,7 +458,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CSE$Object_Notes.coverage" NAME="Object Notes Coverage Results" MODIFIED="1556208688637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$World_Map_Kengs_Map.coverage" NAME="World Map Kengs Map Coverage Results" MODIFIED="1556209312177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$CSVnotes.coverage" NAME="CSVnotes Coverage Results" MODIFIED="1556642478586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$CSVnotes.coverage" NAME="CSVnotes Coverage Results" MODIFIED="1556815262280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/notes/Keng VueLucky Seven's Game.py">
@@ -534,6 +534,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes/MyNewFile.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes/KENGS HANGMAN V.2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -567,39 +570,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/World Map Kengs Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6372">
-          <caret line="438" selection-start-line="438" selection-end-line="438" />
+        <state relative-caret-position="280">
+          <caret line="352" lean-forward="true" selection-start-line="352" selection-end-line="352" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Validator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/helloworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/Book1.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/MyNewFile.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Validator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <caret line="9" column="14" selection-start-line="9" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes/CSVnotes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        <state relative-caret-position="352">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>

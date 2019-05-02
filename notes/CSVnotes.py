@@ -45,6 +45,10 @@ def all_16_digits(num: str):
 # print("OK")
 
 
+def reverse_it(string):
+    print(string[::-1])
+
+
 with open("Book1.csv") as old_csv:
     with open("MyNewFile.csv", 'w', newline='') as new_csv:
         reader = csv.reader(old_csv)
@@ -66,10 +70,23 @@ string = input(">_")
 
 def valid_card_number(num: str):
     print(string[:-1])
-    print(reverse_it(string))
+    print("The very last number for your card is now gone.")
+    print("-----")
+    print(reverse_it(string[:-1]))
+    print("Your card number is now reversed.")
+    print("-----")
 
 
 print(valid_card_number(string))
+
+
+def card_number_that_is_multiplied_by_2(num: str):
+    print(reverse_it(string[:-1]))
+    if reverse_it(string) in [0, 2, 4, 6, 8]:
+        print(string * 2)
+
+
+print(card_number_that_is_multiplied_by_2(string))
 
 
 """
