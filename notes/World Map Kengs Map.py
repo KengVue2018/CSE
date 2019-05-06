@@ -203,10 +203,8 @@ class Backpack(Item):
         self.description = description
         self.space = space
 
-
     def little_backpack(self):
         self.space = 6
-
 
     def big_backpack(self):
         self.space = 10
@@ -345,7 +343,7 @@ class Player(object):
         print("%s attacks %s health left." % (self.name, self.health))
 
     def attack(self, target):
-        print("%s attacks %s for %d damage" %  (self.name, target.name, self.weapon.damage))
+        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon.damage))
         target.take_damage(self.weapon.damage)
 
 

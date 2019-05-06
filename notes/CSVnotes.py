@@ -64,10 +64,7 @@ with open("Book1.csv") as old_csv:
             # print(old-number
 print("DONE")
 
-
 string = input(">_")
-list1 = [0, 2, 4, 6, 8]
-list2 = [1, 3, 5, 7]
 
 
 def valid_card_number(num: str):
@@ -77,7 +74,6 @@ def valid_card_number(num: str):
     print(reverse_it(string[:-1]))
     print("Your card number is now reversed.")
     print("-----")
-    print(list1))
 
 
 print(valid_card_number(string))
