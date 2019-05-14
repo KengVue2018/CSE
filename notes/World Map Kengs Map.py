@@ -366,7 +366,6 @@ while playing:
     command = input(">_")
     if command.lower() in short_directions:
         pos = short_directions.index(command.lower())
-    command = directions[pos]
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.lower() in directions:
@@ -399,41 +398,8 @@ while playing:
         item_name = command[5:]
         item_object = None
 
-    for item in player.inventory:
-        if item.name == item_name:
-            item_object = item
 
-            if item_object is not None:
-                player.inventory.remove(item_object)
-                player.current_location.items.append(item_object)
-                print("1")
 
-    if "inventory" in command:
-        if player.inventory is not None:
-            print("The following items are in your inventory:")
-            for num, item in enumerate(player.inventory):
-                print(str(num + 1) + ": " + item.name)
-
-    if "equip" in command:
-        item_name = command[6:]
-        item_object = None
-
-        for item in player.inventory:
-            if item_name == item_name:
-                item_object = item
-
-    if item_object is not None:
-        print("Equip.")
-        player.weapon = item_object
-
-    if "unequipped" is command:
-        item_name = command[8:]
-        item_object = None
-        player.getattr(item_name)
-        if item_object is not None:
-            player.weapon.remove(item_object)
-            player.inventory.append(item_object)
-            print("Unequipped")
 
 
 
